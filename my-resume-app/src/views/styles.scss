@@ -1,0 +1,123 @@
+// html { 
+//   background: url("../images/test2.png") no-repeat center center fixed; 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+
+.App {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  .home-container {
+    // background-color: rgba(240, 128, 128, 0.25);
+    width: 50%;
+  }
+
+  .first {
+    height: 100vh;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-size: 90px;
+      font-family: 'Fredoka One', cursive;
+    }
+    // z-index: 2;
+  }
+  
+  .second {
+    border-bottom: 2px solid red;
+  }
+  
+  .third {
+    height: 100vh;
+    border-bottom: 2px solid red;
+  }
+  
+}
+
+
+.dog {
+  position: fixed;
+  top: 25%;
+  left: 65%;
+  width: 96px;
+  height: 96px;
+  background: url('../images/dog.png');
+}
+.animateDown {
+  animation: moveForward .8s steps(4, start) infinite;
+}
+.animateRight {
+  animation: moveRight .8s steps(4, start) infinite;
+}
+.animateUp {
+  animation: moveUp .8s steps(4, start) infinite;
+}
+.animateLeft {
+  animation: moveLeft .8s steps(4, start) infinite;
+}
+.animateSit {
+  animation: moveSit .8s steps(4, end);
+}
+.animateTail {
+  animation: moveTail .8s steps(2, end) infinite;
+}
+
+@keyframes moveForward {
+  100% {
+      background-position-x: -384px;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+      background-position-y: -96px;
+  }
+  100% {
+      background-position-y: -96px;
+      background-position-x: -384px;
+  }
+}
+@keyframes moveUp {
+  0% {
+      background-position-y: -192px;
+  }
+  100% {
+      background-position-y: -192px;
+      background-position-x: -384px;
+  }
+}
+@keyframes moveLeft {
+  0% {
+      background-position-y: -288px;
+  }
+  100% {
+      background-position-y: -288px;
+      background-position-x: -384px;
+  }
+}
+@keyframes moveSit {
+  0% {
+      background-position-y: -384px;
+  }
+  100% {
+      background-position-y: -384px;
+      background-position-x: -384px;
+  }
+}
+
+@keyframes moveTail{
+  0% {
+      background-position-x: -192px;
+      background-position-y: -384px;
+  }
+  100% {
+      background-position-x: -384px;
+      background-position-y: -384px;
+  }
+}
