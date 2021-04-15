@@ -1,10 +1,10 @@
-// html { 
-//   background: url("../images/test2.png") no-repeat center center fixed; 
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   background-size: cover;
-// }
+html { 
+  background: url("../images/house.PNG") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .App {
   height: 100%;
@@ -12,7 +12,7 @@
   justify-content: center;
 
   .home-container {
-    // background-color: rgba(240, 128, 128, 0.25);
+    background-color: rgba(140, 189, 223, 0.25);
     width: 50%;
   }
 
@@ -25,6 +25,7 @@
     span {
       font-size: 90px;
       font-family: 'Fredoka One', cursive;
+      color: white;
     }
     // z-index: 2;
   }
@@ -45,79 +46,83 @@
   position: fixed;
   top: 25%;
   left: 65%;
-  width: 96px;
-  height: 96px;
-  background: url('../images/dog.png');
+  width: 100px;
+  height: 100px;
+  background: url('../images/corgi-sprite.png');
 }
 .animateDown {
-  animation: moveForward .8s steps(4, start) infinite;
+  animation: moveDown .8s steps(4, start) infinite;
 }
 .animateRight {
   animation: moveRight .8s steps(4, start) infinite;
 }
-.animateUp {
-  animation: moveUp .8s steps(4, start) infinite;
-}
 .animateLeft {
   animation: moveLeft .8s steps(4, start) infinite;
 }
-.animateSit {
-  animation: moveSit .8s steps(4, end);
+.animateUp {
+  animation: moveUp .8s steps(4, start) infinite;
 }
-.animateTail {
-  animation: moveTail .8s steps(2, end) infinite;
+.animateSit {
+  animation: moveSit .8s steps(2, end) infinite;
+}
+.animateRun {
+  animation: moveRun .8s steps(3, end) infinite;
 }
 
-@keyframes moveForward {
+@keyframes moveDown {
   100% {
-      background-position-x: -384px;
-  }
+      background-position-x: -400px;
+    }
 }
 
 @keyframes moveRight {
   0% {
-      background-position-y: -96px;
+      background-position-y: -100px;
   }
   100% {
-      background-position-y: -96px;
-      background-position-x: -384px;
+      background-position-y: -100px;
+      background-position-x: -400px;
   }
 }
-@keyframes moveUp {
-  0% {
-      background-position-y: -192px;
-  }
-  100% {
-      background-position-y: -192px;
-      background-position-x: -384px;
-  }
-}
+
 @keyframes moveLeft {
   0% {
-      background-position-y: -288px;
+      background-position-y: -100px;
+      transform: scaleX(-1);
   }
   100% {
-      background-position-y: -288px;
-      background-position-x: -384px;
+      background-position-y: -100px;
+      background-position-x: -400px;
+      transform: scaleX(-1);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+      background-position-y: -200px;
+  }
+  100% {
+      background-position-y: -200px;
+      background-position-x: -400px;
   }
 }
 @keyframes moveSit {
   0% {
-      background-position-y: -384px;
+      background-position-y: -300px;
+      background-position-x: -200px;
   }
   100% {
-      background-position-y: -384px;
-      background-position-x: -384px;
+      background-position-y: -300px;
+      background-position-x: -400px;
   }
 }
 
-@keyframes moveTail{
+@keyframes moveRun{
   0% {
-      background-position-x: -192px;
-      background-position-y: -384px;
+      background-position-y: -400px;
   }
   100% {
-      background-position-x: -384px;
-      background-position-y: -384px;
+      background-position-y: -400px;
+      background-position-x: -300px;
   }
 }

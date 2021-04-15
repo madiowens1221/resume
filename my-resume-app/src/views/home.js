@@ -3,7 +3,7 @@ import './styles.scss';
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState();
-  const [animate, setAnimate] = useState('animateTail');
+  const [animate, setAnimate] = useState('animateLeft');
   const [dogWaiting, setDogWaiting] = useState();
 
   const handleScroll = () => {
@@ -26,7 +26,7 @@ function App() {
     }
 
     setScrollPosition(position);
-    setDogWaiting(setTimeout(() => setAnimate('animateTail'), 300));
+    setDogWaiting(setTimeout(() => setAnimate('animateSit'), 300));
   };
 
   useEffect(() => {
