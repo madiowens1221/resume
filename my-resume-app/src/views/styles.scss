@@ -1,12 +1,19 @@
 html { 
-  background-image: linear-gradient(to right bottom, #33304e, #38385a, #3c4067, #404975, #425282, #3a5b8b, #2f6392, #226c98, #057496, #017b91, #1d828a, #368782);
-  // background: url("../images/city.png") no-repeat center center fixed; 
-  // background-image: linear-gradient(to right bottom, #d16ba5, #dd729a, #e47c91, #e8878a, #e99386, #ee9f85, #f2ab86, #f4b888, #fbc88b, #ffd88f, #ffe996, #fffb9f);}
+  // background-image: linear-gradient(to bottom, #d16ba5, #dd729c, #e57a93, #ea848d, #ed8f88, #f29a86, #f5a585, #f7b085, #fcbe87, #ffcc8a, #ffda8f, #ffe996);
+  // background-image: linear-gradient(to bottom, #33304e, #353a5c, #36456b, #345079, #2f5c87, #25648d, #186c92, #057496, #007a92, #0f7f8e, #248388, #368782);
+  background-image: linear-gradient(to bottom, #b3f0f6, #b0eff8, #aeedfa, #acecfb, #aaeafd, #aee8fe, #b3e7ff, #b8e5ff, #c5e3ff, #d7e0ff, #eaddff, #fcdaff);
 }
 .App {
   height: 100vh !important;
   display: flex;
   justify-content: center;
+}
+
+.title-bar {
+  background: linear-gradient(90deg,#ffbce7,#fcbbe6);
+}
+.window {
+  box-shadow: inset -1px -1px #0a0a0a54, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
 }
 
 
@@ -16,16 +23,25 @@ html {
   left: 65%;
   width: 100px;
   height: 100px;
-  background: url('../images/corgi-sprite.png');
+  background: url('../images/Wilson_Marking.png');
 }
 
-.plant2 {
+.dogBarking {
+  position: fixed;
+  top: 35%;
+  left: 65%;
+  width: 96px;
+  height: 96px;
+  background: url('../images/Wilson_Marking.png');
+}
+
+.plant-jeffrey {
   position: fixed;
   top: 50%;
   left: 65%;
   width: 80px;
   height: 100px;
-  background: url('../images/plant2.png');
+  background: url('../images/plant-jeffrey.png');
 }
 
 .cloud {
@@ -34,113 +50,34 @@ html {
   left: 80%;
   width: 300px;
   height: 160px;
-  background: url('../images/cloud2.png');
+  background: url('../images/cloud-white.png');
 }
 
-.plant {
+.cloud-small {
   position: fixed;
-  top: 25%;
-  left: 75%;
-  width: 100px;
-  height: 100px;
-  background: url('../images/flowerpot.png');
-}
-
-.animateDown {
-  animation: moveDown .8s steps(4, start) infinite;
-}
-.animateRight {
-  animation: plantMoveRight 2s steps(2, start) infinite;
-}
-.animateLeft {
-  animation: moveLeft .8s steps(4, start) infinite;
-}
-.animateUp {
-  animation: moveUp .8s steps(4, start) infinite;
-}
-.animateSit {
-  animation: moveSit .8s steps(2, end) infinite;
-}
-.animateRun {
-  animation: moveRun .8s steps(3, end) infinite;
-}
-
-@keyframes plantMoveRight {
-  0% {
-    background-position-x: 0px;
-  }
-  100% {
-      background-position-x: -160px;
-  }
-}
-
-@keyframes moveDown {
-  100% {
-      background-position-x: -400px;
-    }
-}
-
-@keyframes moveRight {
-  0% {
-    background-position-x: 0px;
-    background-position-y: -100px;
-  }
-  100% {
-      background-position-y: -100px;
-      background-position-x: -400px;
-  }
-}
-
-@keyframes moveLeft {
-  0% {
-      background-position-y: -100px;
-      transform: scaleX(-1);
-  }
-  100% {
-      background-position-y: -100px;
-      background-position-x: -400px;
-      transform: scaleX(-1);
-  }
-}
-
-@keyframes moveUp {
-  0% {
-      background-position-y: -200px;
-  }
-  100% {
-      background-position-y: -200px;
-      background-position-x: -400px;
-  }
-}
-@keyframes moveSit {
-  0% {
-      background-position-y: -300px;
-      background-position-x: -200px;
-  }
-  100% {
-      background-position-y: -300px;
-      background-position-x: -400px;
-  }
-}
-
-@keyframes moveRun{
-  0% {
-      background-position-y: -400px;
-  }
-  100% {
-      background-position-y: -400px;
-      background-position-x: -300px;
-  }
+  top: 10%;
+  left: 20%;
+  width: 375px;
+  height: 170px;
+  background: url('../images/cloud-white-small.png');
 }
 
 .grid {
   height: 100%;
   width: 100%;
   margin: 0;
-}
-.grid {
   background-image:
-    repeating-linear-gradient(#ccc 0 1px, transparent 1px 100%),
-    repeating-linear-gradient(90deg, #ccc 0 1px, transparent 1px 100%);
+    repeating-linear-gradient(#ffb9d7 0 2px, transparent 2px 100%),
+    repeating-linear-gradient(90deg, #ffb9d7 0 2px, transparent 2px 100%);
   background-size: 71px 71px;
+}
+
+@font-face {
+  font-family: "04b_30";
+  src: url('../images/04b_30.TTF') format("truetype")
+}
+
+.name {
+  font-family: "04b_30";
+  font-size: 30px;
 }

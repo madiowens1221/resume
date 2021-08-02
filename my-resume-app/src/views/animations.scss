@@ -1,0 +1,121 @@
+// cloud
+.animateCloud {
+    animation: cloud-up-down 1.25s infinite alternate;
+}
+
+@keyframes cloud-up-down {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+// plant
+.animatePlant {
+  animation: plantMove 2s steps(2, start) infinite;
+}
+
+@keyframes plantMove {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+        background-position-x: -160px;
+    }
+}
+
+// dog barking
+.animateDogBarking {
+  animation: dogBarking 2s steps(3) infinite;
+}
+
+@keyframes dogBarking {
+  0% {
+    background-position-x: 0px;
+    background-position-y: -576px;
+  }
+  100% {
+    background-position-x: -288px;
+    background-position-y: -576px;
+  }
+}
+
+.animateDown {
+  animation: moveDown .8s steps(4, start) infinite;
+}
+.animateRight {
+  animation: moveRight .8s steps(4, start) infinite;
+}
+.animateLeft {
+  animation: moveLeft .8s steps(4, start) infinite;
+}
+.animateUp {
+  animation: moveUp .8s steps(4, start) infinite;
+}
+.animateSit {
+  animation: moveSit .8s steps(2) infinite;
+}
+.animateRun {
+  animation: moveRun .8s steps(3) infinite;
+}
+
+@keyframes moveDown {
+  100% {
+      background-position-x: -400px;
+    }
+}
+
+@keyframes moveRight {
+  0% {
+    background-position-x: 0px;
+    background-position-y: -96px;
+  }
+  100% {
+    background-position-x: -384px;
+    background-position-y: -96px;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+      background-position-y: -100px;
+      transform: scaleX(-1);
+  }
+  100% {
+      background-position-y: -100px;
+      background-position-x: -400px;
+      transform: scaleX(-1);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+      background-position-y: -200px;
+  }
+  100% {
+      background-position-y: -200px;
+      background-position-x: -400px;
+  }
+}
+@keyframes moveSit {
+  0% {
+      background-position-y: -300px;
+      background-position-x: -200px;
+  }
+  100% {
+      background-position-y: -300px;
+      background-position-x: -400px;
+  }
+}
+
+@keyframes moveRun {
+  0% {
+      background-position-y: -400px;
+  }
+  100% {
+      background-position-y: -400px;
+      background-position-x: -300px;
+  }
+}
