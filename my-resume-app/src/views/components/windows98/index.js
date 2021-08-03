@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 
 const Windows98 = (props) => (
-    <div className="window" style={{width: props.width + "px"}}>
+    <div className="window" style={{width: props.width, height: props.height}}>
     <div className="title-bar">
       <div className="title-bar-text">{props.title}</div>
       <div className="title-bar-controls">
@@ -12,7 +12,7 @@ const Windows98 = (props) => (
       </div>
     </div>
     <div className="window-body">
-      <p>{props.children}</p>
+      {props.children}
     </div>
   </div>
 );

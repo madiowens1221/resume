@@ -1,3 +1,25 @@
 #about {
     white-space: pre-line;
+    box-shadow: inset 2px 2px 0px #595959;
+    font: .8125rem Monospace;
+    overflow-x: hidden;
+    border-right: 1px solid #595959;
+    border-bottom: 1px solid #595959;
+    background: white;
+    padding: 5px;
+    height: 100%;
+    pre {
+        background: white;
+        box-shadow: none;
+        margin: 0;
+    }
+    .user {
+        color: limegreen;
+    }
+    .domain {
+        color: #00bcd4;
+    }
+    .file-path {
+        color: magenta;
+    }
 }
