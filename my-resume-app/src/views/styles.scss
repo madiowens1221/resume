@@ -1,7 +1,10 @@
 html { 
   // background-image: linear-gradient(to bottom, #d16ba5, #dd729c, #e57a93, #ea848d, #ed8f88, #f29a86, #f5a585, #f7b085, #fcbe87, #ffcc8a, #ffda8f, #ffe996);
   // background-image: linear-gradient(to bottom, #33304e, #353a5c, #36456b, #345079, #2f5c87, #25648d, #186c92, #057496, #007a92, #0f7f8e, #248388, #368782);
-  background-image: linear-gradient(to bottom, #b3f0f6, #b0eff8, #aeedfa, #acecfb, #aaeafd, #aee8fe, #b3e7ff, #b8e5ff, #c5e3ff, #d7e0ff, #eaddff, #fcdaff);
+  // background-image: linear-gradient(to bottom, #b3f0f6, #aeecf8, #aae9fb, #a7e4fd, #a6e0fe, #abdcff, #b1d8ff, #b9d3ff, #c8ceff, #dac8fe, #edc1f7, #ffbbea);
+  // background-image: url('../images/daytime.png')
+  // background-image: url('../images/sunset.png')
+  background-image: url('../images/night.png')
 }
 .App {
   height: 100vh !important;
@@ -50,7 +53,7 @@ html {
   left: 80%;
   width: 300px;
   height: 160px;
-  background: url('../images/cloud-white.png');
+  background: url('../images/cloudpink.png');
 }
 
 .cloud-small {
@@ -67,8 +70,8 @@ html {
   width: 100%;
   margin: 0;
   background-image:
-    repeating-linear-gradient(#ffb9d7 0 2px, transparent 2px 100%),
-    repeating-linear-gradient(90deg, #ffb9d7 0 2px, transparent 2px 100%);
+    repeating-linear-gradient(#ffb2e4 0 2px, transparent 2px 100%), // 83eeff for night
+    repeating-linear-gradient(90deg, #ffb2e4 0 2px, transparent 2px 100%);
   background-size: 71px 71px;
 }
 
