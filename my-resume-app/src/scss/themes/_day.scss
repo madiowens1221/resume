@@ -1,0 +1,9 @@
+.day {
+    background-image: map-get($backgrounds, day);
+    .cloud {
+      background: map-get($clouds, white-cloud);
+    }
+    .cloud-small {
+      background: map-get($clouds, small-white);
+    }
+}

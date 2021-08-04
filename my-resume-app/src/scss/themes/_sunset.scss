@@ -1,0 +1,10 @@
+.sunset {
+    background-image: map-get($backgrounds, sunset);
+    .cloud {
+      background: map-get($clouds, pink-cloud);
+    }
+    .cloud-small {
+      background: map-get($clouds, pink-small-cloud);
+    }
+}
+  

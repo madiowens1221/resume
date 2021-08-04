@@ -1,0 +1,18 @@
+$images_path: './../../images';
+
+$backgrounds: (
+    "day": url('#{$images_path}/daytime.png'),
+    "sunset": url('#{$images_path}/sunset.png'),
+    "night": url('#{$images_path}/night.png'),
+);
+
+$clouds: (
+    "white-cloud": url('#{$images_path}/cloud-white.png'),
+    "small-white": url('#{$images_path}/cloud-white-small.png'),
+    "pink-cloud": url('#{$images_path}/cloud-pink.png'),
+    "pink-small-cloud": url('#{$images_path}/cloud-pink-small.png'),
+    "dark-cloud": url('#{$images_path}/cloud-blue.png'),
+    "dark-small-cloud":  url('#{$images_path}/cloud-blue-small.png'),
+);
+
+$blue: #83eeff;
